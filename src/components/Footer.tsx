@@ -5,10 +5,10 @@ const Footer = () => {
     <div className="bg-[#F7F7F7] px-40 py-20">
       {/** First Lane  */}
       <div className="flex flex-row ">
-        <div className="flex flex-row w-3/4">
+        <div className="flex flex-row w-3/4 mb-5">
           {/** Categories 1  */}
           <div className="Categories_1 mx-10">
-            <h1>Categories</h1>
+            <h1 className="font-semibold my-2">Categories</h1>
             <ul className="text-[#A5A5A5]">
               <li>Earrings</li>
               <li>Necklaces</li>
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           {/** Categories 2  */}
           <div className="Categories_1 mx-10">
-            <h1>Quick links</h1>
+            <h1 className="font-semibold my-2">Quick links</h1>
             <ul className="text-[#A5A5A5]">
               <li>Earrings</li>
               <li>Necklaces</li>
@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/** Categories 3  */}
           <div className="Categories_1 mx-10">
-            <h1>Information</h1>
+            <h1 className="font-semibold my-2">Information</h1>
             <ul className="text-[#A5A5A5]">
               <li>Earrings</li>
               <li>Necklaces</li>
