@@ -16,12 +16,8 @@ const Courousel = () => {
           <Link href={"/collection"}>Shop collection</Link>
         </button>
       </div>
-      <div className="md:w-1/2">
-        <img
-          src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/07/01101000/Minimal-Jewellery-HI-1600x900.jpeg"
-          alt=""
-          className="h-[460px]"
-        />
+      <div className=" flex flex-end  md:w-[600px]">
+        <img src="p-5.png" className="md:h-[550px]" />
       </div>
     </div>
   );

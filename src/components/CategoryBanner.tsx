@@ -29,14 +29,14 @@ const CategoryBanner = () => {
             src="https://kinclimg8.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIRS0009P08_YAA18XXXXXXXXXXXX_ABCD00-PICS-00004-1024-34385.png"
             width={200}
           />
-          <h1 className="py-2 font-semibold">Gold pendants</h1>
+          <h1 className="py-2 font-semibold">Necklaces</h1>
         </div>
         <div className="bg-[#F0F0F0] mx-5 py-3 hover:scale-150 hover:shadow-2xl rounded-xl text-center">
           <img
             src="https://kinclimg5.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIIP0622J13_YAA22XXXXXXXXXXXX_ABCD00-PICS-00004-1024-47494.png"
             width={200}
           />
-          <h1 className="py-2 font-semibold">Gold nose pins </h1>
+          <h1 className="py-2 font-semibold">Earrings</h1>
         </div>
       </div>
     </div>
