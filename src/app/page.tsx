@@ -6,13 +6,14 @@ import Marque from "@/components/Marque";
 import Quote from "@/components/Quote";
 import Instagram from "@/components/Instagram";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
     <main>
       <Courousel />
-      <div className="flex flex-row justify-center px-20 py-10 border-b-2 ">
-        <div className="mx-10 flex flex-row">
+      <div className="flex flex-col md:flex-row justify-center px-5 md:px-20 py-10 border-b-2 ">
+        <div className="mx-5 my-5 md:mx-10 flex flex-row">
           <img
             src="https://img.icons8.com/?size=100&id=4722&format=png&color=000000"
             alt=""
@@ -23,7 +24,7 @@ export default function Home() {
             <h1 className="text-[#9A9A9A]">Pan India Shipping</h1>
           </div>
         </div>
-        <div className="mx-10 flex flex-row">
+        <div className="mx-5 my-5 md:mx-10 flex flex-row">
           <img
             src="https://img.icons8.com/?size=100&id=82766&format=png&color=000000"
             alt=""
@@ -35,7 +36,7 @@ export default function Home() {
             <h1 className="text-[#9A9A9A]">Guaranteed saving</h1>
           </div>
         </div>
-        <div className="mx-10 flex flex-row">
+        <div className="mx-5 my-5 md:mx-10 flex flex-row">
           <img
             src="https://img.icons8.com/?size=100&id=Xhj6nS1DPOPn&format=png&color=000000"
             alt=""
@@ -47,7 +48,7 @@ export default function Home() {
             <h1 className="text-[#9A9A9A]">secure payments</h1>
           </div>
         </div>
-        <div className="mx-10 flex flex-row">
+        <div className="mx-5 my-2 md:mx-10 flex flex-row">
           <img
             src="https://img.icons8.com/?size=100&id=30379&format=png&color=000000"
             alt=""
@@ -62,6 +63,7 @@ export default function Home() {
       <CategoryBanner />
       <Marque />
       <Quote />
+      <FAQ />
       <Instagram />
     </main>
   );

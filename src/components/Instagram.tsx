@@ -24,13 +24,18 @@ const Instagram = () => {
   if (!isClient) {
     return null; // Prevent server-side rendering
   }
+  {
+    /** */
+  }
   return (
-    <div className="flex flex-col my-20 bg-[#F7ECE4] mx-20 rounded-md py-10">
-      <div className="text-center text-3xl my-8">Follow us in @instagram</div>
-      <div className="flex flex-row mx-32">
+    <div className="flex flex-col my-20  bg-[#F7ECE4] mx-5 md:mx-20 rounded-md py-10">
+      <div className="text-center text-3xl mx-5 my-8">
+        Follow us in @instagram
+      </div>
+      <div className="flex flex-col md:flex-row mx-5 md:mx-32">
         <img
           src="p-1.png"
-          className="w-44 mx-3 rounded-md hover:scale-150   hover:shadow-2xl"
+          className="w-44 my-3 mx-3 rounded-md hover:scale-150   hover:shadow-2xl"
           alt=""
         />
         <img

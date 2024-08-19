@@ -41,23 +41,24 @@ const Quote = () => {
   }, [isMounted, quotes.length]);
 
   return (
-    <div className="text-center px-40 my-28">
+    <div className="text-center px-5 md:px-40 my-5 md:my-28">
       <div className="underline decoration-[#E4CCC0]">QUOTE OF THE HOUR</div>
-      <div className="text-3xl px-32 my-5 ">
+      <div className="text-3xl px-5s md:px-32 my-5 ">
         {isMounted ? quotes[quoteIndex] : quotes[0]}
       </div>
-      <div className="flex flex-row justify-center my-10">
-        <h1 className="mx-10 text-xl text-[#A8A8A8]">CHANEL</h1>
-        <h1 className="mx-10 text-xl text-[#A8A8A8]">DIOR</h1>
+      <div className="flex flex-col md:flex-row justify-center my-5 md:my-10">
+        <h1 className="mx-4 md:mx-10 my-2 text-xl text-[#A8A8A8]">CHANEL</h1>
+
+        <h1 className="mx-4 md:mx-10 my-2 text-xl text-[#A8A8A8]">DIOR</h1>
         <h1
-          className={`mx-10 text-3xl font-semibold transition transform duration-500 ${
+          className={`mx-4 md:mx-10 my-2 text-3xl font-semibold transition transform duration-500 ${
             scaled ? "scale-150" : "scale-100"
           } ${scaled ? "text-black" : " text-[#A8A8A8]"} `}
         >
           MERAKI
         </h1>
-        <h1 className="mx-10 text-xl text-[#A8A8A8]">ZARA</h1>
-        <h1 className="mx-10 text-xl text-[#A8A8A8]">VOGUE</h1>
+        <h1 className="mx-4 md:mx-10 my-2 text-xl text-[#A8A8A8]">ZARA</h1>
+        <h1 className="mx-4 md:mx-10 my-2 text-xl text-[#A8A8A8]">VOGUE</h1>
       </div>
     </div>
   );

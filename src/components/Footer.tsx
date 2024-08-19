@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#F7F7F7] px-40 py-20">
+    <div className="bg-[#F7F7F7] px-5 md:px-40 py-20">
       {/** First Lane  */}
       <div className="flex flex-row ">
-        <div className="flex flex-row w-3/4 mb-5">
+        <div className="flex flex-col md:flex-row w-3/4 mb-5">
           {/** Categories 1  */}
           <div className="Categories_1 mx-10">
             <h1 className="font-semibold my-2">Categories</h1>
@@ -13,7 +13,7 @@ const Footer = () => {
               <li>Earrings</li>
               <li>Necklaces</li>
               <li>Bracelets</li>
-              <li>Diamond rings</li>
+              <li>Ringss</li>
             </ul>
           </div>
           {/** Categories 2  */}
@@ -23,7 +23,7 @@ const Footer = () => {
               <li>Earrings</li>
               <li>Necklaces</li>
               <li>Bracelets</li>
-              <li>Diamond rings</li>
+              <li>Ringss</li>
             </ul>
           </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
               <li>Earrings</li>
               <li>Necklaces</li>
               <li>Bracelets</li>
-              <li>Diamond rings</li>
+              <li>Ringss</li>
             </ul>
           </div>
         </div>

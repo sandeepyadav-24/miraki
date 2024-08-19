@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Courousel = () => {
   return (
-    <div className="bg-[#F2E0D3] flex flex-row">
-      <div className="mx-40 my-10 w-1/2">
-        <h1 className="text-8xl font-bold my-5 font-serif">
+    <div className="bg-[#F2E0D3] flex flex-col md:flex-row">
+      <div className="mx-5 md:mx-40 my-10 md:w-1/2">
+        <h1 className="text-5xl md:text-8xl font-bold my-5 font-serif">
           Freshen Collection{" "}
         </h1>
         <h3>
@@ -16,7 +16,7 @@ const Courousel = () => {
           <Link href={"/collection"}>Shop collection</Link>
         </button>
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <img
           src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/07/01101000/Minimal-Jewellery-HI-1600x900.jpeg"
           alt=""

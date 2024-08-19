@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="px-40">
+    <div className="px-5 md:px-40">
       <div className="font-semibold text-3xl  my-20">
         Crafting Timeless Elegance in Minimalist Jewelry, Where Every Piece
         Reflects Subtle Beauty and Refined Craftsmanship
