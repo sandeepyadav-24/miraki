@@ -8,10 +8,10 @@ const page = () => {
         Reflects Subtle Beauty and Refined Craftsmanship
       </div>
       <h1 className="text-[#9F9F9F] ">
-        Welcome to [Your Brand Name], where simplicity meets elegance in every
-        piece we craft. Our jewelry is more than just an accessory—it's a
-        reflection of your inner grace, designed to complement your natural
-        beauty with a touch of understated luxury.
+        Welcome to Miraki, where simplicity meets elegance in every piece we
+        craft. Our jewelry is more than just an accessory—it's a reflection of
+        your inner grace, designed to complement your natural beauty with a
+        touch of understated luxury.
       </h1>
     </div>
   );
