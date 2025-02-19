@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import HyperText from "@/components/magicui/hyper-text";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 const Navbar = () => {
+  const { cartItems } = useCart();
   const [showLogin, setShowLogin] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const [email, setEmail] = useState("");
@@ -69,7 +71,14 @@ const Navbar = () => {
             )}
           </li>
           <li className="mx-3 py-2 font-semibold">
-            <h1>Cart</h1>
+            <Link href="/cart" className="flex items-center">
+              Cart
+              {cartItems.length > 0 && (
+                <span className="ml-1 bg-black text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                  {cartItems.length}
+                </span>
+              )}
+            </Link>
           </li>
         </ul>
         {/* Account login form (shown only when not logged in) */}

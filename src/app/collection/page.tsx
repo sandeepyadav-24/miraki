@@ -3,6 +3,7 @@ import React from "react";
 import { jewel } from "../../db/db";
 import { useState } from "react";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 interface HoverImageProps {
   images: string[]; // Define that 'images' is an array of strings
@@ -36,6 +37,7 @@ const HoverImage: React.FC<HoverImageProps> = ({ images, name }) => {
 };
 
 const page = () => {
+  const { addToCart } = useCart();
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
@@ -106,6 +108,15 @@ const page = () => {
                       <div className="w-1/4 text-[#707A76]">{e.price}</div>
                     </div>
                   </Link>
+                  <button
+                    onClick={(event) => {
+                      event.preventDefault();
+                      addToCart(e);
+                    }}
+                    className="w-full mt-2 bg-black text-white py-2 px-4 hover:bg-gray-800 transition duration-300"
+                  >
+                    Add to Cart
+                  </button>
                 </div>
               )
           )}
